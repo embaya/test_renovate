@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "prHeader": "EmbayaTestHeader",
+  "assignees": [
+    "embaya"
+  ],
+  "labels": ["dependencies-testlabel"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["embaya"],
+      "labels": ["embaya-testlabel"]
+    },
+    {
+      "matchPackagePatterns": ["maven"],
+      "labels": ["maven-testlabel"]
+    }
+  ]
+}
