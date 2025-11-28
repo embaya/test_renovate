@@ -1,21 +1,31 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "prHeader": "EmbayaTestHeader",
   "assignees": [
     "embaya"
   ],
-  "labels": ["dependencies-testlabel"],
+  "labels": [
+    "dependencies-testlabel"
+  ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["embaya"],
-      "labels": ["embaya-testlabel"]
+      "labels": [
+        "embaya-testlabel"
+      ],
+      "matchPackageNames": [
+        "/embaya/"
+      ]
     },
     {
-      "matchPackagePatterns": ["maven"],
-      "labels": ["maven-testlabel"]
+      "labels": [
+        "maven-testlabel"
+      ],
+      "matchPackageNames": [
+        "/maven/"
+      ]
     }
   ]
 }
